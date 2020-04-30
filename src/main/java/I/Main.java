@@ -117,6 +117,18 @@ public class Main extends Plugin {
             titan.remove(event.tile.x+","+event.tile.y);
             fortress.remove(event.tile.x+","+event.tile.y);
         });
+        Events.on(EventType.GameOverEvent.class, event -> {
+            draug.clear();
+            spirit.clear();
+            phantom.clear();
+            wraith.clear();
+            ghoul.clear();
+            revenant.clear();
+            dagger.clear();
+            crawler.clear();
+            titan.clear();
+            fortress.clear();
+        });
         Events.on(EventType.WorldLoadEvent.class, event -> {
             draug.clear();
             spirit.clear();
