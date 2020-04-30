@@ -27,6 +27,3 @@ To modify settings, you must go to (Windows: `C:\users\<username>\mind_db\imperi
 5) done, look for plugin.jar in pluginfolder\build\libs\
 
 Note: Highly recommended to use Java 8.
-
-### Made By L0615T1C5.216AC:9437
-Proud owner of Chaotic-neutral.ddns.net:1111
