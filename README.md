@@ -1,5 +1,22 @@
 ### Description
-A Auto Sync plugin to keep players up to date.
+Limits the amount of drone factories.
+
+This plugin saves info to your harddrive. (Windows: `C:\users\<username>\mind_db\imperium<port>.cn` Linux: `/home/<user>/mind_db/imperium<port>.cn`)
+
+### Installing
+To install the plugin, download the .jar in releases or build your own jar.
+Then place the jar in your servers mod folder.
+Download the optional Dependacy [cn-core](https://github.com/L0615T1C5-216AC-9437/core-cn) to have easy acces to the mods settings.
+
+
+### Configuring
+With [cn-core](https://github.com/L0615T1C5-216AC-9437/core-cn):
+to View the settings, you do `get imperium<insert_server_port_here>` on the console.
+To modify the settings, you do `putint imperium<insert_server_port_here> <value_modified> <value>` on the console.
+To reset settings, you do `imperium-clear` on the console.
+
+Without cn-core:
+To modify settings, you must go to (Windows: `C:\users\<username>\mind_db\imperium<port>.cn` Linux: `/home/<user>/mind_db/imperium<port>.cn`) and edit the file as a JSON file.
 
 ### Building a Jar
 
@@ -11,39 +28,5 @@ A Auto Sync plugin to keep players up to date.
 
 Note: Highly recommended to use Java 8.
 
-### Installing
-
-Simply place the output jar from the step above in your server's `config/mods` directory and restart the server.
-List your currently installed plugins/mods by running the `mods` command.
-If you want to adjust any settings, just change the settings.json
-
-If installing from a release, download the latest release .java and .json and put *both* in your mobs folder.
-
-### Configuring
-
-To modify settings, modify the settings.json file.
-
-It should look like this
-```
-{
-  "async":
-  {
-    "spacing": 5
-  }
-}
-```
-If you have more than one mod using settings.json, it should look like this
-```
-{
-  "mod1":
-  {
-    "stuff": ""
-  },
-  "async":
-  {
-    "spacing": 5
-  }
-}
-```
 ### Made By L0615T1C5.216AC:9437
 Proud owner of Chaotic-neutral.ddns.net:1111
