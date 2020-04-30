@@ -221,7 +221,7 @@ public class Main extends Plugin {
     }
     public void registerServerCommands(CommandHandler handler){
         if (enabled) {
-            handler.register("imperium-clear","<l>", "generates new nas.cn file", arg -> {
+            handler.register("imperium-clear","<l>", "puts default configuration to the imperium<port>.cn file", arg -> {
                 data = new JSONObject();
                 data.put("draug-factory", 50);
                 data.put("spirit-factory", 35);
