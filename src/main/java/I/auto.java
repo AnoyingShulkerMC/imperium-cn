@@ -24,7 +24,7 @@ public class auto extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Log.info("AS started Successfully!");
+        Log.info("auto started Successfully!");
         while (mt.isAlive()) {
             try {
                 TimeUnit.MINUTES.sleep(5);
